@@ -1,0 +1,31 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	height: 100%;
+}
+
+#ytplayer {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+#lyricsdisplay {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	right: 0px;
+	background: #21231F;
+}
+
+a#downloadLink {
+	position: fixed;
+	left: 50%;
+	bottom: 0px;
+	z-index: 1;
+	color: white;
+	opacity: 0.7;
+}

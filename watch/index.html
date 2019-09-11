@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LyrTube</title>
+		<link href="/css/main.css" rel="stylesheet" type="text/css">
+		<script src="/js/jquery-2.0.3.min.js"></script>
+		<script language="javascript" type="text/javascript" src="/js/swfobject.js"></script> 
+		<script language="javascript" type="text/javascript" src="/js/lrc.js"></script>
+	</head>
+	<body>
+		<div id="ytplayer">
+			Loading YouTube player. If this message is displayed for an extended period of time, make sure JavaScript and Flash are both enabled and try again later.
+		</div>
+		<script>
+		//Load player api asynchronously.
+		var tag = document.createElement('script');
+		tag.src = "http://www.youtube.com/player_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		var done = false;
+		</script>
+		
+		<canvas id="lyricsdisplay" width="960px" height="1080px"></canvas>
+		<a id="downloadLink" class="download">Download .LRC file</a>
+	</body>
+</html>

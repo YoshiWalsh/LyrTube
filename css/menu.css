@@ -1,0 +1,28 @@
+html, body {
+	background: #21231F;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	display: block;
+	width: 100%;
+	color: #B76100;
+	text-align: center;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 1px;
+}
+
+a:hover {
+	background: #B76100;
+	color: white;
+}
+
+h1 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
