@@ -36,6 +36,7 @@ function loadSong(song)
 		songToLoad = song;
 	}
 	document.getElementById("downloadLink").setAttribute("href", '/resources/lyrics/byytid/'+song+".lrc");
+	document.getElementById("downloadLink").setAttribute("download", song + ".lrc");
 	jQuery.ajaxSetup({
 		'beforeSend': function(xhr) {
 			xhr.overrideMimeType('text/html; charset=UTF-8');
@@ -43,6 +44,9 @@ function loadSong(song)
 	});
 	jQuery.get('/resources/lyrics/byytid/'+song+'.lrc', function(data) {
 		var song = loadLyricsFromText(data);
+		if(song.data.ti || song.data.title) {
+			document.getElementById("downloadLink").setAttribute("download", (song.data.ti || song.data.title) + ".lrc");
+		}
 		lyrics = song.lyrics;
 		metadata = song.data;
 		if(metadata["offset"] != null)
