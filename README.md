@@ -6,4 +6,4 @@ Initially this project was written in PHP with a MySQL database and I had dreams
 
 As this is an old project, the code doesn't live up to my current standards. Please don't judge me for it.
 
-You can see this project running live at [lyrtube.joshwalsh.me](https://lyrtube.joshwalsh.me/).
+You can see this project running live at [lyrtube.yoshiwalsh.me](https://lyrtube.yoshiwalsh.me/).

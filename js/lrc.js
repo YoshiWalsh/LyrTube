@@ -1,5 +1,5 @@
 /* This is where the magic happens */
-/*   Copyright Joshua Walsh 2014   */
+/*   Copyright Yoshi Walsh 2024   */
 
 var songToLoad = "";
 var offset = 0.1;
